@@ -10,6 +10,23 @@
 </head>
 
 <body>
+
+    <div class="product-wrapper">
+        <ul>
+            <li data-price="100">товар 1</li>
+            <div class="product">100</div>
+            <li data-price="200">товар 2</li>
+            <div class="product">200</div>
+            <li data-price="600">товар 6</li>
+            <div class="product">300</div>
+            <li data-price="300">товар 3</li>
+            <div class="product">400</div>
+            <li data-price="400">товар 4</li>
+            <div class="product">500</div>
+            <li data-price="500">товар 5</li>
+            <div class="product">600</div>
+        </ul>
+    </div>
     <div class="filter__menu">
         <div class="filter__menu-header">
             <h3>Фильтровать и сортировать</h3>
@@ -20,7 +37,7 @@
                 <div class="filter__menu-item">
                     <p>Сортировка</p>
                     <div class="sort-wrapper">
-                        <div class="sort-current">По новизне</div>
+                        <div class="sort-current" onclick="sort()">По новизне</div>
                         <div class="sort sort-1" data-sort="1">По новизне</div>
                         <div class="sort sort-2" data-sort="2">По названию</div>
                         <div class="sort sort-3" data-sort="3">Сначала дороже</div>
@@ -50,6 +67,7 @@
                 <button type="submit">применить</button> -->
                 </div>
         </form>
+
         </div>
         <script src="script.js"></script>
 </body>
