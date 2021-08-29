@@ -22,15 +22,41 @@ body {
 
 .product-wrapper>ul>li {
     float: left;
-    display: flex;
+    /* display: flex; */
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 50px;
+    width: 250px;
     border: 1px solid rgb(101, 3, 180);
     border-radius: 5px;
     margin-right: 20px;
     margin-bottom: 20px;
+    display: none;
+}
+
+.product__name {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.product__image {
+    height: 50px;
+    width: 100%;
+    background: rgba(100, 3, 180, 0.192);
+}
+
+.product-inner {
+    padding: 5px;
+}
+
+.product__price {}
+
+.product__publishedon {}
+
+.product__option {}
+
+.checked {
+    display: flex!important;
 }
 
 .filter__menu {

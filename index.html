@@ -13,18 +13,66 @@
 
     <div class="product-wrapper">
         <ul>
-            <li data-price="100">товар 1</li>
-            <div class="product">100</div>
-            <li data-price="200">товар 2</li>
-            <div class="product">200</div>
-            <li data-price="600">товар 6</li>
-            <div class="product">300</div>
-            <li data-price="300">товар 3</li>
-            <div class="product">400</div>
-            <li data-price="400">товар 4</li>
-            <div class="product">500</div>
-            <li data-price="500">товар 5</li>
-            <div class="product">600</div>
+
+            <li class="checked" data-price="100" data-name="товар-1" data-publishedon="1020123" data-option="">
+                <div class="product__name">товар-1</div>
+                <div class="product__image"></div>
+                <div class="product-inner">
+                    <div class="product__price">цена: 100</div>
+                    <div class="product__publishedon"> дата поступления: 1720123</div>
+                    <div class="product__option"></div>
+                </div>
+            </li>
+
+            <li class="checked" data-price="200" data-name="товар-2" data-publishedon="1020140" data-option="">
+                <div class="product__name">товар-2</div>
+                <div class="product__image"></div>
+                <div class="product-inner">
+                    <div class="product__price">цена: 200</div>
+                    <div class="product__publishedon"> дата поступления: 8020140</div>
+                    <div class="product__option"></div>
+                </div>
+            </li>
+
+            <li class="checked" data-price="400" data-name="товар-4" data-publishedon="1029923" data-option="new">
+                <div class="product__name">товар-4</div>
+                <div class="product__image"></div>
+                <div class="product-inner">
+                    <div class="product__price">цена: 400</div>
+                    <div class="product__publishedon"> дата поступления: 1029923</div>
+                    <div class="product__option"></div>
+                </div>
+            </li>
+
+            <li class="checked" data-price="500" data-name="товар-3" data-publishedon="1770123" data-option="">
+                <div class="product__name">товар-3</div>
+                <div class="product__image"></div>
+                <div class="product-inner">
+                    <div class="product__price">цена: 500</div>
+                    <div class="product__publishedon"> дата поступления: 1770123</div>
+                    <div class="product__option"></div>
+                </div>
+            </li>
+
+            <li class="checked" data-price="300" data-name="товар-5" data-publishedon="7720123" data-option="">
+                <div class="product__name">товар-5</div>
+                <div class="product__image"></div>
+                <div class="product-inner">
+                    <div class="product__price">цена: 300</div>
+                    <div class="product__publishedon"> дата поступления: 7720123</div>
+                    <div class="product__option"></div>
+                </div>
+            </li>
+
+            <li class="checked" data-price="50" data-name="товар-6" data-publishedon="10555123" data-option="new popular">
+                <div class="product__name">товар-6</div>
+                <div class="product__image"></div>
+                <div class="product-inner">
+                    <div class="product__price">цена: 50</div>
+                    <div class="product__publishedon"> дата поступления: 10555123</div>
+                    <div class="product__option"></div>
+                </div>
+            </li>
         </ul>
     </div>
     <div class="filter__menu">
@@ -37,39 +85,25 @@
                 <div class="filter__menu-item">
                     <p>Сортировка</p>
                     <div class="sort-wrapper">
-                        <div class="sort-current" onclick="sort()">По новизне</div>
+                        <div class="sort-current" onclick="sortingByClick()">По новизне</div>
                         <div class="sort sort-1" data-sort="1">По новизне</div>
                         <div class="sort sort-2" data-sort="2">По названию</div>
                         <div class="sort sort-3" data-sort="3">Сначала дороже</div>
                         <div class="sort sort-4" data-sort="4">Сначала дешевле</div>
                     </div>
-
-                    <!-- <select name="sorting" id="select-sort">
-                  <option value="default" selected>По умолчанию</option>
-                  <option value="min">Сначала дешевле</option>
-                  <option value="max">Сначала дороже</option>
-                  <option value="date">По новизне</option>
-                  <option value="name">По названию</option>
-                </select>
+                    <p>Наличие опций</p>
+                    <div>
+                        <span>Новый</span><input id="new" type="checkbox" data-check="new" onclick="checkboxIsEnabled()">
+                    </div>
+                    <div>
+                        <span>Популярный</span><input id="popular" type="checkbox" data-check="popular" onclick="checkboxIsEnabled()">
+                    </div>
                 </div>
-                <div class="filter__menu-item">
-                    <p>Материл</p>
-                    <select name="structure">
-                  <option value="default" selected>По умолчанию</option>
-                  <option value="tree">Дерево</option>
-                  <option value="DSP">ДСП</option>
-                  <option value="DVP">ДВП</option>
-                </select>
-                </div>
-                <div class="filter__menu-item">
-                    <label><input type="checkbox" name="new"> Новинки</label>
-                </div>
-                <button type="submit">применить</button> -->
-                </div>
+            </div>
         </form>
 
-        </div>
-        <script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
